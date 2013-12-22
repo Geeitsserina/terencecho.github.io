@@ -15,3 +15,28 @@
  *
  * Get ride of home tab?
  */
+
+/*
+color: #288;
+     background: #123;
+     */
+
+.home {
+    padding: 8em 1em 1em 1em;
+}
+
+.resume {
+    padding: 8em 1em 1em 1em;
+}
+
+.projects {
+    padding: 8em 1em 1em 1em;
+}
+
+.project-list {
+    padding-left: 3em;
+}
+
+.contact {
+    padding: 8em 1em 1em 1em;
+}

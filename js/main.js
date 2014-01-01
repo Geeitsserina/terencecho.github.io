@@ -5,7 +5,7 @@
 
 
 
-//put in resume show/hide here
+//resume.html
 
 //hide and show MechE Classes
 $('.ME-show').hide();
@@ -152,3 +152,17 @@ $(document).ready(function(){
     });
   });  
 });
+
+
+
+
+//projects.html
+
+//$('.personalProjects').scrollspy({ target: '#js-pp' });
+
+/*$(document).ready(function(){
+  $('.yes').click(function(){
+$('yes').scrollspy({ target: '.websites' });
+  });  
+});
+*/

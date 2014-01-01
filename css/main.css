@@ -21,22 +21,31 @@ color: #288;
 background: #123;
 */
 
+/*index.html*/
 .home {
     padding: 8em 1em 1em 1em;
 }
 
+/*resume.html*/
 .resume {
     padding: 8em 1em 1em 1em;
 }
 
+/*projects.html*/
 .projects {
     padding: 8em 1em 1em 1em;
 }
 
 .project-list {
-    padding-left: 3em;
+    padding-left: 4em;
 }
 
+.sidebar {
+    position: fixed;
+    padding-right: 3em;
+}
+
+/*contact.html*/
 .contact {
     padding: 8em 1em 1em 1em;
 }

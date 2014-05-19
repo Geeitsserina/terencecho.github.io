@@ -186,6 +186,12 @@ var parse = function() {
 		case "catherine li":
 			output = "<strong>Catherine Li</strong>, the girl who saved me hours and hours of my life by helping me in chem1al. She's also hella chill and better than leo kwan at beer pong!";
 			break;
+		case "patrick truong":
+			output = "<strong>Patrick Truong/strong> is a hella chill guy from socal. He's great to talk to, always interesting conversations. One of the chillest, calmest guys I've met at berkeley, you should really get to know him!";
+			break;
+		case "james maa":
+			output = "<strong>James Maa</strong> is a computer programming god. He's also easy to talk to and has some interesting things to say, hit him up if you're in the mood for an interesting conversation!";
+			break;
 
 
 

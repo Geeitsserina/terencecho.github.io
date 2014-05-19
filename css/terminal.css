@@ -9,6 +9,7 @@
     padding:5px;
     margin:10px;
 	overflow:auto;
+	font-family:Courier;
 }
 
 #command {

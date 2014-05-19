@@ -81,13 +81,21 @@ var parse = function() {
 
 
 
-		//friends
+		//family
 		case "terence cho":
 			output = "<strong>Terence Cho</strong> is a student at UC Berkeley. He's alright, I guess...";
 			break;
 		case "andrew cho":
 			output = "<strong>Andrew Cho</strong> is my brother, a really chill guy who has a masters in Computer Engineering from UCLA.";
 			break;
+		case "stephanie leung":
+			output = "<strong>Stephanie Leung</strong> is my cousin who attends Notre Dame studying architecture. She's hella good at drawing and playing music and all that crazy stuff and very over-achieving, psh typical asian. haha jk she's pretty hipstery, way too cool for me. You should hit her up, she's pretty friendly and talkative";
+			break;
+		case "nathan leung":
+			output = "<strong>Nathan Leung</strong> is my cousin who still attends high school. He's such a stud, I wish i was as cool as him. Drumline, Tennis, getting girls. What more could a teenage boy want in life? In all seriously, he's a pretty chill dude.";
+			break;
+
+		//friends
 		case "dickson lui":
 			output = "<strong>Dickson Lui</strong> is a god of webdev, linkedin, and cooking. He's so cool, I wish I was him. What more needs to be said?";
 			break;
@@ -204,3 +212,34 @@ var submit = function (command) {
     	output.appendChild(div);
 	}
 };
+
+//for blinking cursor
+$(function () {
+    var cursor;
+    $('#cmd').click(function () {
+        $('#command').focus();
+        cursor = window.setInterval(function () {
+            if ($('#cursor').css('visibility') === 'visible') {
+                $('#cursor').css({
+                    visibility: 'hidden'
+                });
+            } else {
+                $('#cursor').css({
+                    visibility: 'visible'
+                });
+            }
+        }, 500);
+
+    });
+
+    $('#command').keyup(function () {
+        $('#cmd span').text("guest@terencecho.com:~$  "+ $(this).val());
+    });
+
+    $('#command').blur(function () {
+        clearInterval(cursor);
+        $('#cursor').css({
+            visibility: 'visible'
+        });
+    });
+});

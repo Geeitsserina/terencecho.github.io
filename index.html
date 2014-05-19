@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,13 +24,23 @@
         <br>
         Enter "help" for some help.
         <br>
+        If you cannot type anything, please click on the cursor to make sure it is blinking.
+        <br>
         <br>
       </div>
       <div id = "output"></div>
+      <!--
       <div id = "input"> 
         <span>guest@terencecho.com:~$ </span>&nbsp;
-        <input type="text" id="command" />
       </div>
+      -->
+
+
+      <div id="cmd">
+        <span>guest@terencecho.com:~$ </span>
+        <div id="cursor"></div>
+      </div>
+      <input type="text" id="command" />
     </div>
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

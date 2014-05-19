@@ -13,23 +13,12 @@
 }
 
 #command {
-	opacity: 1;
+	opacity: 0;
 	background-color: transparent;
 	color: #ffffff;
 	
 } 
 
-.cssConsoleCursor {
-float: left;
-background: #21f838;
-width:8px;
-height:17px;
-margin:0;
-padding:0;
-padding-right:1px;
-padding-left:1px;
-visibility: hidden;
-}
 
 /*
   color: #CCCCCC;
@@ -37,3 +26,25 @@ visibility: hidden;
   border: 3px double #CCCCCC;
   padding: 10px;
 */
+
+
+
+#cmd {
+    font-family: courier;
+    /*font-size: 14px;*/
+    background: 353535;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+#cmd span {
+    float: left;
+    white-space: pre;
+}
+
+#cursor {
+    float: left;
+    width: 5px;
+    height: 14px;
+    background: #ffffff;
+}

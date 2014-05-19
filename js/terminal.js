@@ -38,6 +38,9 @@ var parse = function() {
 		case "ls":
 			output = "<strong>" + commandList + "</strong>";
 			break;
+		case "who":
+			output = "guest";
+			break;
 		case "":
 			return "";
 
@@ -54,7 +57,7 @@ var parse = function() {
 
 		//Personal
 		case "about":
-			output = "command not ready";
+			output = "I'm a 20 year old socal native who is currently interning at Agilent Technologies this summer.";
 			break;
 		case "education":
 			output = "I am a third year undergraduate student attending UC Berkeley and majoring in EECS (Electrical Engineering & Computer Science) and Mechanical Engineering.";
@@ -63,10 +66,20 @@ var parse = function() {
 			output = "command not ready";
 			break;
 		case "contact":
-			output = "command not ready";
+			output = "Please e-mail me at 'terencecho@berkeley.edu' and I will promptly respond to you as soon as I can.";
 			break;
 		case "clear":
 			return "clear";
+
+
+
+
+
+
+
+
+
+
 
 		//friends
 		case "terence cho":
@@ -89,6 +102,18 @@ var parse = function() {
 			break;
 		case "unzi park":
 			output = "<strong>Unzi Park</strong> is my hella chill German R5B buddy! She's pretty cool and popular, the only weird thing about her is how she eats her food. Other than that, she's pretty aight";
+			break;
+		case "jing chen":
+			output = "<strong>Jing Chen</strong> is a really smart and chill girl who's insanely friendly and talks a bit too much. But it's all good cause she's really cool to hang out with and is an awesome friend!";
+			break;
+		case "eric tu":
+			output = "<strong>Eric To</strong>, the tu-ster, is a hella smart and chill dude who flakes sometimes... but it's okay, if I can forgive him, you can too. He's pretty chill to hang out with, if he doesn't flake on you!";
+			break;
+		case "jonathan shum":
+			output = "<strong>Jonathan Shum</strong> is a hella smart man who's doubling in EECS and ME. Who the heck does that?! And he's taking like all the classes ever offered. Definitely a chill dude who likes to build cool stuff. If there's a next iron man out there, it's definitely him.";
+			break;
+		case "bryan thov":
+			output = "<strong>Bryan Thov</strong> is a hella smart dude who's doublien in EECS and ME. Who the heck does that?! Even though he's hella smart, he's also hella chill. Definitely a guy who you can just have life talks with and relax with.";
 			break;
 		case "yoloswag4jesus":
 			output = "YOLOSWAG4JESUS<br>Requested by Dickson.";

@@ -33,7 +33,7 @@ var parse = function() {
 	switch(input) {
 		//typical of command prompt
 		case "help":
-			output = "The help command is still in the works. Good luck without it!";
+			output = "This website is suppose to be a simulation of a computer terminal.<br>You type 'commands' into the terminal to have different information appear.<br>To view a list of possible commands, enter the command 'ls'<br>You may type any of those commands (e.g. 'about', 'education' 'resume') to view more information about me<br>If any extra help needed, please contact me at 'terencecho@berkeley.edu'. Thank you for visiting my website!";
 			break;
 		case "ls":
 			output = "<strong>" + commandList + "</strong>";
@@ -57,7 +57,7 @@ var parse = function() {
 
 		//Personal
 		case "about":
-			output = "I'm a 20 year old socal native who is currently interning at Agilent Technologies this summer.";
+			output = "I'm a 20 year old socal native who is currently interning at Agilent Technologies for the summer.";
 			break;
 		case "education":
 			output = "I am a third year undergraduate student attending UC Berkeley and majoring in EECS (Electrical Engineering & Computer Science) and Mechanical Engineering.";
@@ -71,6 +71,16 @@ var parse = function() {
 		case "clear":
 			return "clear";
 
+		//random
+		case "hello":
+			output = "Hello there, friend! Welcome to my website.";
+			break;
+		case "hello world":
+			output = "Hello World!";
+			break;
+		case "you suck":
+			output = "Says the one saying you suck to a computer...";
+			break;
 
 
 
@@ -208,7 +218,7 @@ var submit = function (command) {
     	output.innerHTML = "";
     } else {
     	var div = document.createElement("div");
-    	div.innerHTML = "guest@terencecho.com:~$ " + command;
+    	div.innerHTML = "guest@terencecho.com:~$&nbsp&nbsp" + command;
     	output.appendChild(div);
 	}
 };

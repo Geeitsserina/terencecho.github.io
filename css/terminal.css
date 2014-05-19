@@ -1,0 +1,15 @@
+
+
+#terminal {
+	color: #ffffff;
+	background-color: #353535;
+	width:100em;
+	height:50em;
+	border:1px solid red;
+    padding:5px;
+    margin:10px;
+}
+
+#command {
+	opacity: 50;
+} 

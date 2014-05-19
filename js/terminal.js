@@ -63,7 +63,7 @@ var parse = function() {
 			output = "I am a third year undergraduate student attending UC Berkeley and majoring in EECS (Electrical Engineering & Computer Science) and Mechanical Engineering.";
 			break;
 		case "resume":
-			output = "command not ready";
+			output = "I am currently updating my resume. To see my old resume <a href = 'https://www.dropbox.com/s/4l6a47zbz907q1t/TChoResume.pdf'>click here.</a>";
 			break;
 		case "contact":
 			output = "Please e-mail me at 'terencecho@berkeley.edu' and I will promptly respond to you as soon as I can.";

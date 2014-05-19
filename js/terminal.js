@@ -17,6 +17,8 @@ $("#command").keyup(function (e) {
     if (e.keyCode == 13) {
     	command = parse();
         submit(command);
+  		var terminal = document.getElementById('terminal');
+  		terminal.scrollTop = terminal.scrollHeight;
     }
 });
 
@@ -67,8 +69,17 @@ var parse = function() {
 			break;
 
 		//friends
+		case "terence cho":
+			output = "<strong>Terence Cho</strong> is a student at UC Berkeley. He's alright, I guess...";
+			break;
 		case "andrew cho":
-			output = "Andrew Cho is my brother, a really chilll guy who has a masters in Computer Engineering from UCLA."
+			output = "<strong>Andrew Cho</strong> is my brother, a really chill guy who has a masters in Computer Engineering from UCLA.";
+			break;
+		case "dickson lui":
+			output = "<strong>Dickson Lui</strong> is a god of webdev, linkedin, and cooking. He's so cool, I wish I was him. What more needs to be said?";
+			break;
+		case "jesse luo":
+			output = "<strong>Jese Luo</strong>, also known as <em>FratStar-90,0000</em>, is a god among boys. He has an internship with AT&T, is in a frat, and works for rescomp. What a stud.";
 			break;
 
 
@@ -100,4 +111,5 @@ var submit = function (command) {
     var div = document.createElement("div");
     div.innerHTML = "guest@terencecho.com:~$ " + command;
     output.appendChild(div);
+
 };

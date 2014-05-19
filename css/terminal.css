@@ -8,8 +8,10 @@
 	border:1px solid red;
     padding:5px;
     margin:10px;
+	overflow:auto;
 }
 
 #command {
 	opacity: 50;
 } 
+

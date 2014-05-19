@@ -31,7 +31,6 @@ var parse = function() {
 	var input = document.getElementById("command").value;
 	document.getElementById("command").value = '';
 	switch(input) {
-
 		//typical of command prompt
 		case "help":
 			output = "The help command is still in the works. Good luck without it!";
@@ -65,8 +64,7 @@ var parse = function() {
 			output = "command not ready";
 			break;
 		case "clear":
-			output = "command not ready";
-			break;
+			return "clear";
 
 		//friends
 		case "terence cho":
@@ -81,6 +79,9 @@ var parse = function() {
 		case "jesse luo":
 			output = "<strong>Jese Luo</strong>, also known as <em>FratStar-90,0000</em>, is a god among boys. He has an internship with AT&T, is in a frat, and works for rescomp. What a stud.";
 			break;
+		case "yoloswag4jesus":
+			output = "YOLOSWAG4JESUS";
+			break;
 
 
 
@@ -90,6 +91,7 @@ var parse = function() {
 			output = input + ": command not found";
 	}
 
+	//if echo command
 	var check = input.slice(0, 4);
 	if (check == "echo") {
 		if (input.length == 4) {
@@ -108,8 +110,11 @@ var parse = function() {
 //submits command
 var submit = function (command) {
     var output = document.getElementById("output");
-    var div = document.createElement("div");
-    div.innerHTML = "guest@terencecho.com:~$ " + command;
-    output.appendChild(div);
-
+    if (command == "clear") {
+    	output.innerHTML = "";
+    } else {
+    	var div = document.createElement("div");
+    	div.innerHTML = "guest@terencecho.com:~$ " + command;
+    	output.appendChild(div);
+	}
 };

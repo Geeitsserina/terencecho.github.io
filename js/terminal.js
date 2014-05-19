@@ -57,7 +57,7 @@ var parse = function() {
 			output = "command not ready";
 			break;
 		case "education":
-			output = "command not ready";
+			output = "I am a third year undergraduate student attending UC Berkeley and majoring in EECS (Electrical Engineering & Computer Science) and Mechanical Engineering.";
 			break;
 		case "resume":
 			output = "command not ready";
@@ -81,8 +81,67 @@ var parse = function() {
 		case "jesse luo":
 			output = "<strong>Jese Luo</strong>, also known as <em>FratStar-90,0000</em>, is a god among boys. He has an internship with AT&T, is in a frat, and works for rescomp. What a stud.";
 			break;
+		case "delia he":
+			output = "<strong>Delia He</strong> is my awesome friend that I've known since 6th grade! She's hella chill and literally one of the best friends I have ever had in my life. I can't imagine life without her! Sucks to be you if you don't have her in your life.";
+			break;
+		case "jami wang":
+			output = "<strong>Jami wang</strong> is a doctor in training who's really awesome! If I were to write out all I had to say about her, my website would crash!";
+			break;
+		case "unzi park":
+			output = "<strong>Unzi Park</strong> is my hella chill German R5B buddy! She's pretty cool and popular, the only weird thing about her is how she eats her food. Other than that, she's pretty aight";
+			break;
 		case "yoloswag4jesus":
-			output = "YOLOSWAG4JESUS";
+			output = "YOLOSWAG4JESUS<br>Requested by Dickson.";
+			break;
+
+		//People from the House
+		case "louis wong":
+			output = "<strong>Louis Wong</strong> is one of the nicest friend I have ever had the pleasure of meeting. He's so popular that he has a hard time remebering names, which makes me feel special to know that he knows who I am!";
+			break;
+		case "serina gee":
+			output = "<strong>Serina Gee</strong> is the most og shorty I've ever met in my life. Super friendly, nice, and amazing at drawing. Just check out the amazing picture she drew my by typing the command 'spaceship'. Feature not ready yet at this time though, please check again later, or remind me if it's past summer and I totally just forgot.";
+			break;
+		case "imran mahmood":
+			output = "<strong>Imran Mahmood</strong> is hella smart and hella chill. 10/10 would bang again. p.s. don't be jelly serina, but you're just a beard.";
+			break;
+		case "cherry liu":
+			output = "<strong>Cherry Liu</strong> is a short little asain girl who lacks common sense. On the bright side, she's pretty chill and interesting and nice to me (which is all that matters). She's kinda bad at tetris though.";
+			break;
+		case "james wei":
+			output = "<strong>James Wei</strong> is hella smart and really good at teaching. Seriously if you want something explained well, you should ask him. Always the word of wisdom. Also he's pretty chill, you should go hang out with him!";
+			break;
+		case "makoto lalwani":
+			output = "<strong>Makoto Lalwani</strong> is a really chill guy who knows his pokemon (so does a good amount of people at the house actually...). I'm always impressed by how he keeps his grades up while joining like hella clubs. I'm pretty sure he's a robot... makotron....";
+			break;
+		case "andrew yen":
+			output = "<strong>Andrew Yen</strong> is my hella chill roommate! From ping pong to league, this guy is hella intense, so you should try challenging him someday and let me watch, it'll be my entertainment!";
+			break;
+		case "charles zhang":
+			output = "<strong>Charles Zhang</strong> is a hella chill dude. One day I wish I can grow up to be just like him. I'll alway cherish my time sitting next to him in German. #nohomo #waityeshomo #waitwut";
+			break;
+		case "varun naik":
+			output = "<strong>Varun Naik</strong> is my hella dark friend. Other than be hella dark, he enjoys being a god and getting paid $40 an hour. Also he taught me how to properly scoop curry with naan. The man, the myth, the legend. Varun.";
+			break;
+		case "krista kurisaki":
+			output = "<strong>Krista Kurisaki</strong> is my only friend from socal in the house! She's hella chill and always happy, everyone should be more like her. #SocalBestcal";
+			break;
+		case "sameer nayak":
+			output = "<strong>Sameer Nayak</strong> is a really nice and genuine guy. He's really easy to talk to and an all around awesome guy, you should definitely take the time to say hi to him whenever you're free. Also, he's pretty funny, you should catch him at one of his theater rice shows!";
+			break;
+		case "leo kwan":
+			output = "<strong>Leo Kwan</strong>, the ruler of the shower. He's the one who taught me how to play league. I wouldn't be as OP without him. Seriously, I'm so good because of him that riot doesn't let me play anymore, why else would I have not played in like months?";
+			break;
+		case "clifford cheng":
+			output = "<strong>Clifford Cheng</strong> is my hella chill roommate! He's really a nice guy and easy to talk to. I'm hella lucky to have him as a roommate!";
+			break;
+		case "Ivan Chau":
+			output = "<strong>Ivan Chau</strong> is hella chill. Many refer to him as 'The God', but I tend to think he's just an ordinary man. An ordinary man who can who secretly fights crime. Why else is he never at the house???";
+			break;
+		case "jocelyn kuswanto":
+			output = "<strong>Jocelyn Kuswanto</strong> is a really nice girl who is awesome to sit next to in ee20. Thank god we'll never have to take that class again.... Anyway, she's really easy to talk to and I highly recommending that you go say hi to her whenever you see her!";
+			break;
+		case "catherine li":
+			output = "<strong>Catherine Li</strong>, the girl who saved me hours and hours of my life by helping me in chem1al. She's also hella chill and better than leo kwan at beer pong!";
 			break;
 
 

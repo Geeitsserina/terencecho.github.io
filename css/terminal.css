@@ -3,7 +3,7 @@
 #terminal {
 	color: #ffffff;
 	background-color: #353535;
-	width:100em;
+	width:50em;
 	height:50em;
 	border:1px solid red;
     padding:5px;
@@ -13,6 +13,27 @@
 }
 
 #command {
-	opacity: 50;
+	opacity: 1;
+	background-color: transparent;
+	color: #ffffff;
+	
 } 
 
+.cssConsoleCursor {
+float: left;
+background: #21f838;
+width:8px;
+height:17px;
+margin:0;
+padding:0;
+padding-right:1px;
+padding-left:1px;
+visibility: hidden;
+}
+
+/*
+  color: #CCCCCC;
+  background: #000000;
+  border: 3px double #CCCCCC;
+  padding: 10px;
+*/

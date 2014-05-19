@@ -38,6 +38,8 @@ var parse = function() {
 		case "ls":
 			output = "<strong>" + commandList + "</strong>";
 			break;
+		case "":
+			return "";
 
 		//websites
 		case "linkedin":

@@ -166,10 +166,10 @@ var parse = function() {
 			output = "<strong>Varun Naik</strong> is my hella dark friend. Other than be hella dark, he enjoys being a god and getting paid $40 an hour. Also he taught me how to properly scoop curry with naan. The man, the myth, the legend. Varun.";
 			break;
 		case "krista kurisaki":
-			output = "<strong>Krista Kurisaki</strong> is my only friend from socal in the house! She's hella chill and always happy, everyone should be more like her. YAY! #SocalBestcal";
+			output = "<strong>Krista Kurisaki</strong> is my only friend from socal in the house (from floor 2)! She's hella chill and always happy, everyone should be more like her. YAY! #SocalBestcal";
 			break;
 		case "sameer nayak":
-			output = "<strong>Sameer Nayak</strong> is a really nice and genuine guy. He's really easy to talk to and an all around awesome guy, you should definitely take the time to say hi to him whenever you're free. Also, he's pretty funny, you should catch him at one of his theater rice shows!";
+			output = "<strong>Sameer Nayak</strong> is a really nice and genuine guy from socal! (woo socal!) He's really easy to talk to and an all around awesome guy, you should definitely take the time to say hi to him whenever you're free. Also, he's pretty funny, you should catch him at one of his theater rice shows!";
 			break;
 		case "leo kwan":
 			output = "<strong>Leo Kwan</strong>, the ruler of the shower. He's the one who taught me how to play league. I wouldn't be as OP without him. Seriously, I'm so good because of him that riot doesn't let me play anymore, why else would I have not played in like months?";

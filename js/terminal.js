@@ -177,7 +177,7 @@ var parse = function() {
 		case "clifford cheng":
 			output = "<strong>Clifford Cheng</strong> is my hella chill roommate! He's really a nice guy and easy to talk to. I'm hella lucky to have him as a roommate! Don't be jelly.";
 			break;
-		case "Ivan Chau":
+		case "ivan chau":
 			output = "<strong>Ivan Chau</strong> is hella chill. Many refer to him as 'The God', but I tend to think he's just an ordinary man. An ordinary man who can who secretly fights crime. Why else is he never at the house???";
 			break;
 		case "jocelyn kuswanto":

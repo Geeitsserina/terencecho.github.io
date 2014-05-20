@@ -33,7 +33,7 @@ var parse = function() {
 	switch(input) {
 		//typical of command prompt
 		case "help":
-			output = "This website is suppose to be a simulation of a computer terminal.<br>You type 'commands' into the terminal to have different information appear.<br>To view a list of possible commands, enter the command 'ls'<br>You may type any of those commands (e.g. 'about', 'education' 'resume') to view more information about me<br>If any extra help needed, please contact me at 'terencecho@berkeley.edu'. Thank you for visiting my website!";
+			output = "This website is suppose to be a simulation of a computer terminal.<br>You type 'commands' into the terminal to have different information appear.<br>To view a list of possible commands, enter the command 'ls'.<br>You may type any of those commands (e.g. 'about', 'education' 'resume') to view more information about me.<br>If any extra help needed, please contact me at 'terencecho@berkeley.edu'. Thank you for visiting my website!";
 			break;
 		case "ls":
 			output = "<strong>" + commandList + "</strong>";

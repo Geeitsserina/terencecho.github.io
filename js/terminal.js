@@ -24,7 +24,7 @@ $("#command").keyup(function (e) {
 
 //needs to be changed into a table later?
 var tab = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
-var commandList = "Perosnal: about" + tab + "education" + tab + "resume" + tab + "contact<br>Websites: linkedin" + tab + "facebook" + tab + "github<br>Command Prompt: help" + tab + "clear" + tab + "ls" + tab + "echo";
+var commandList = "Personal: about" + tab + "education" + tab + "resume" + tab + "contact<br>Websites: linkedin" + tab + "facebook" + tab + "github<br>Command Prompt: help" + tab + "clear" + tab + "ls" + tab + "echo";
 
 //parse through the input
 var parse = function() {

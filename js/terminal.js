@@ -22,9 +22,26 @@ $("#command").keyup(function (e) {
     }
 });
 
+var tab = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
+
+//ls commands
 //needs to be changed into a table later?
-var tab = "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
-var commandList = "Personal: about" + tab + "education" + tab + "resume" + tab + "contact<br>Websites: linkedin" + tab + "facebook" + tab + "github<br>Command Prompt: help" + tab + "clear" + tab + "ls" + tab + "echo";
+var personal = ["about", "education", "resume", "contact", "website"];
+var websites = ["linkedin", "facebook", "github"];
+var cmdprompt = ["help", "clear", "ls", "echo"];
+var commandList = "Personal: <strong>";
+for (var i = 0; i < personal.length; i++) {
+	commandList = commandList + personal[i] + tab;
+}
+commandList = commandList + "</strong><br>Websites: <strong>"
+for (var i = 0; i < websites.length; i++) {
+	commandList = commandList + websites[i] + tab;
+}
+commandList = commandList + "</strong><br>Command Prompt: <strong>"
+for (var i = 0; i < cmdprompt.length; i++) {
+	commandList = commandList + cmdprompt[i] + tab;
+}
+commandList = commandList + "</strong>"
 
 //parse through the input
 var parse = function() {
@@ -33,10 +50,10 @@ var parse = function() {
 	switch(input) {
 		//typical of command prompt
 		case "help":
-			output = "This website is suppose to be a simulation of a computer terminal.<br>You type 'commands' into the terminal to have different information appear.<br>To view a list of possible commands, enter the command 'ls'.<br>You may type any of those commands (e.g. 'about', 'education' 'resume') to view more information about me.<br>If any extra help needed, please contact me at 'terencecho@berkeley.edu'. Thank you for visiting my website!";
+			output = "This website is suppose to be a simulation of a computer terminal.<br>You type 'commands' into the terminal to have different information appear.<br>To view a list of possible commands, enter the command 'ls'.<br>You may type any of those commands (e.g. 'about', 'education', 'resume') to view more information about me.<br>If any extra help needed, please contact me at 'terencecho@berkeley.edu'.<br>Thank you for visiting my website!";
 			break;
 		case "ls":
-			output = "<strong>" + commandList + "</strong>";
+			output = commandList;
 			break;
 		case "who":
 			output = "guest";
@@ -67,6 +84,9 @@ var parse = function() {
 			break;
 		case "contact":
 			output = "Please e-mail me at 'terencecho@berkeley.edu' and I will promptly respond to you as soon as I can.";
+			break;
+		case "website":
+			output = "This is my personal website that I made utilizing HTML/CSS and Javascript."
 			break;
 		case "clear":
 			return "clear";
